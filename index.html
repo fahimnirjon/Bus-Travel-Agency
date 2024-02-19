@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIRJON Paribahan</title>
+  <!-- fav icon link  -->
+  <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon">
+  <!-- css file linkup -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- tailwind and daisy ui link up  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome linkup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header Section  -->
+  <header class="main_container">
+    <!-- header parent  -->
+    <div class="flex justify-between items-center lg:mt-8 mt-4">
+      <!-- dropdown  starts -->
+      <div class="dropdown lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-300 font-[500] rounded-box w-52">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </div>
+      <!-- dropdown  ends -->
+      <div>
+        <h2 class="lg:text-[28px] cursor-pointer select-none font-extrabold">NP E-Ticket</h2>
+      </div>
+      <div>
+        <ul class="md:flex lg:gap-10 gap-2  hidden     lg:text-base font-[500]">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-3 cursor-pointer bg-[#1dd1001a] p-2 rounded-xl border ">
+        <h4 class="md:text-[1.125rem] font-bold green-primary">Bus</h4>
+        <span class="green-primary"><i class="fa-solid fa-van-shuttle"></i></span>
+      </div>
+    </div>
+  </header>
+  <!-- Main section  -->
+  <main class="main_container">
+    <!-- Banner section  -->
+    <section id="banner_id">
+      <!-- banner parent  -->
+      <div class="banner_parent flex mt-8 flex-col relative">
+        <!-- banner content box  -->
+        <div class=" text-center p-4 mx-auto md:p-[3.3rem] ">
+          <h1 class=" text-white text-center font-extrabold md:text-[3.25rem] text-[1.75rem]">End-to-End Travel with
+            <br>
+            <span class="green-primary"> Nirjon Paribahan</span>
+          </h1>
+          <p class="lg:w-[500px] text-base inter my-4 text-white ">"Welcome to Nirjon Paribahan, your go-to choice for comfortable and reliable bus travel. With a commitment to safety and customer satisfaction, we offer seamless journeys for all your commuting needs. Join us and experience convenience, comfort, and quality service like never before."</p>
+          <button class="secondary_btn text-white font-semibold md:mb-[7.5rem]  bg-[#1dd100]"><a href="#destination">Buy
+              Tickets</a></button>
+        </div>
+        <!-- <<<<<<<<<<<<<<< banner cart box >>>>>>>>>>>>>>> -->
+        <div
+          class="flex lg:left-[16%] xl:left-[17%] 1xl:left-[17%] 2xl:left-[26%] lg:-bottom-[3.3125rem] gap-6 lg:absolute justify-center mx-4 h-[25rem] md:h-auto md:flex-row flex-col ">
+          <!-- =============== card one ============ -->
+          <div class="flex  rounded-[1rem] bg-white border-btm p-4">
+            <!-- image box  -->
+            <div class="flex justify-center pr-2   items-center">
+              <img class="h-[2.625rem] w-[2.625rem]" src="./images/people.png" alt="">
+            </div>
+            <!-- content box  -->
+            <div>
+              <h3 class="inter font-bold text-[1.375rem] lg:text-[2rem]  black-primary">500K+</h3>
+              <p class="black-secondary text-base">Registered users</p>
+            </div>
+          </div>
+          <!-- =============== card two ============ -->
+          <div class="flex rounde-[2rem]   rounded-[1rem] bg-white border-btm p-4">
+            <!-- image box  -->
+            <div class="flex justify-center pr-2   items-center">
+              <img class="h-[2.625rem] w-[2.625rem]" src="./images/ticket-cupon.png" alt="">
+            </div>
+            <!-- content box  -->
+            <div>
+              <h3 class="inter font-bold text-[1.375rem]  lg:text-[2rem]  black-primary">1.7Lakh</h3>
+              <p class="black-secondary text-base">Tickets sold</p>
+            </div>
+          </div>
+          <!-- =============== card three ============ -->
+          <div class="flex rounde-[2rem]   rounded-[1rem] bg-white border-btm p-4">
+            <!-- image box  -->
+            <div class="flex justify-center pr-2   items-center">
+              <img class="h-[2.625rem] w-[2.625rem]" src="./images/stoppage.png" alt="">
+            </div>
+            <!-- content box  -->
+            <div>
+              <h3 class="inter font-bold text-[1.375rem]  lg:text-[2rem]  black-primary">80K+</h3>
+              <p class="black-secondary text-base">Rental Partners</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Best offer section  -->
+    <section>
+      <!-- best offer parent  -->
+      <div class="lg:mt-[10rem] mt-[4rem] mx-auto ">
+        <h2 class="text-center black-primary  text-[28px] lg:text-[2.25rem] font-bold">Best offers for you</h2>
+        <!-- box parent -->
+        <div class="mt-[1.5rem] flex flex-col lg:flex-row gap-6 justify-center ">
+          <!-- left box  -->
+          <div class="flex flex-1 justify-between relative p-[2rem] rounded-lg  bg-[#ffbf0f]">
+            <div>
+              <h2 class="font-extrabold inter black-primary text-[26px] lg:text-[2.125rem]">15% OFF</h2><br>
+              <h4 class="font-semibold text-base">on your next purchase</h4>
+              <p>use by january 2024</p>
+            </div>
+            <div>
+              <h2 class="font-extrabold  black-primary text-[26px] lg:text-[2.125rem]">NEW15</h2>
+              <h3>coupon Code</h3>
+            </div>
+            <!-- circles  -->
+            <div class="w-8 h-8 hidden lg:block left-[55%] -top-4 absolute bg-white rounded-full"></div>
+            <div class="w-8 h-8 left-[55%] -bottom-4  absolute bg-white rounded-full"></div>
+          </div>
+          <!-- =========== Right box =========== -->
+          <div class="flex flex-1 justify-between relative p-[2rem] rounded-lg   bg-[#f78c9c]">
+            <div>
+              <h2 class="font-extrabold inter black-primary text-[26px] lg:text-[2.125rem]">15% OFF</h2><br>
+              <h4 class="font-semibold text-base">on your next purchase</h4>
+              <p>use by january 2024</p>
+            </div>
+            <div>
+              <h2 class="font-extrabold text-[26px] black-primary lg:text-[2.125rem]">Couple 20</h2>
+              <h3>coupon Code</h3>
+            </div>
+            <!--  circle   -->
+            <div class="w-8 h-8 left-[55%] hidden lg:block -top-4 absolute bg-white rounded-full"></div>
+            <div class="w-8 h-8 left-[55%] -bottom-4  absolute bg-white rounded-full"></div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <button class=" secondary_btn  mt-[3.25rem]"><a href="#destination">See All Offers</a></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Poribahone Main Container  -->
+  <section id="destination" class="poribahon_main mt-[6.25rem]">
+    <main class="main_container">
+      <!-- Poribahon top section <<<<<<<<<<<<<<< -->
+      <section class="mt-4 lg:mt-[6.5625rem]">
+        <!-- content box -->
+        <div class=" flex justify-center items-center flex-col ">
+          <h2 class="black-primary lg:text-[34px] text[28px]  font-bold mt-[1.125rem]  inter ">
+             Nirjon
+            Paribahan</h2>
+          <p class=" lg:text-base mt-4 lg:w-[50%] text-center" style="color: rgba(3, 7, 18, 0.6);"> Nirjon Paribahan offers 15%
+            to 20% Discount and convenient bus transportation services, ensuring punctuality, comfort, and
+            environmentally friendly travel experiences for passengers.</p>
+        </div>
+        <!-- timer content box  -->
+        <div class=" lg:flex-row flex-col flex gap-16 lg:mt-10 mt-4">
+          <!-- =================== left_timer_parent ===================== -->
+          <div class="right_timer_box flex flex-col py-4 lg:py-[38px] px-2 lg:px-[28px]"
+            style="border-radius: 24px; background: rgb(255, 255, 255);">
+            <!-- header content  parent -->
+            <div class="header_parent flex lg:flex-row flex-col justify-between items-center">
+              <!-- left  -->
+              <div class=" flex justify-center items-center gap-3">
+
+                <div class=""><img class="w-[60px] h-[40px]" src="./images/bus-logo.png" alt="Bus"></div>
+                <div class="mt-4 lg:m-0">
+                  <h2 class="black-primary font-bold text-[28px] "> Nirjon Paribahan</h2>
+                  <p class="text-base" style="color: rgba(3, 7, 18, 0.6);">Coach-009-WEB ! AC_Buisness</p>
+                </div>
+              </div>
+
+              <!-- right  Button -->
+              <div class="flex mt-8 justify-center  items-center  gap-2 secondary_btn ">
+                <img src="./images/seat-green.png" alt="">
+                <p><span id="total_seat">43</span> Seats left</p>
+              </div>
+            </div>
+            <!-- shedule parent ===============> -->
+            <div class="p-6 mt-[20px]" style="border-radius: 24px;
+            background: rgb(247, 248, 248);">
+              <div class="flex justify-between  items-center  " style="border-bottom: 1px dashed rgba(3, 7, 18, 0.2);">
+                <p class="font-semibold py-4 " style="color: rgba(3, 7, 18, 0.6);">Route</p>
+                <p class="black-primary py-4 font-semibold">Dhaka-Sylhet</p>
+              </div>
+              <div class="flex justify-between items-center  " style="border-bottom: 1px dashed rgba(3, 7, 18, 0.2);">
+                <p style="color: rgba(3, 7, 18, 0.6);" class=" py-4 font-semibold">Departure Time</p>
+                <p class="black-primary font-semibold py-4">9:00 PM</p>
+              </div>
+              <!-- box  -->
+              <div class="flex lg:flex-row flex-col mt-[20px] gap-6 justify-evenly">
+                <p class="hash_box text-base py-[.9375rem] px-[1.25rem] font-[500] inter">
+                  Boarding Point - Laxmipur</p>
+                <p class="hash_box text-base py-[.9375rem] px-[1.25rem] font-[500] inter">
+                  Dropping Point - Khulna</p>
+                <p class="hash_box text-base py-[.9375rem] px-[1.25rem] font-[500] inter">
+                  Est. Time - 11 Hour</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- vartically line ======================  -->
+          <div class="lg:my-14 hidden lg:block" style="border-left: 2px dashed rgb(29, 209, 0);"></div>
+          <!-- ============= right timer content box ============= -->
+          <div class="flex  flex-col justify-center items-center">
+            <img class="w-[37px] h-[37px] " src="./images/fare.png" alt="">
+            <h2 class="text-[22px] font-[600] black-primary mt-6">550 Taka</h2>
+            <h4 class="s_black text-[22px]">Per Seat</h4>
+          </div>
+        </div>
+
+      </section>
+      <!-- Poribahon Bottom section <<<<<<<<<<<<<<< -->
+      <section class="mt-6 lg:p-6 p-4 flex flex-col" style="border-radius: 24px;background: rgb(255, 255, 255);">
+        <!--========================================================
+           ===========================container  -->
+        <div class="con_tainer flex lg:flex-row flex-col ">
+          <!-- ================= Seat parent container ================== -->
+          <div class="">
+            <!-- seat content parent start -->
+            <div>
+              <h2 class="black-primary text-[20px] mb-4 font-600">Select Your Seat</h2>
+              <div class="flex justify-between py-6 items-center  "
+                style="border-bottom: 1px dashed rgba(3, 7, 18, 0.2);border-top: 1px dashed rgba(3, 7, 18, 0.2);">
+                <div class="flex justify-center items-center gap-1">
+                  <img src="./images/seat-gray.png" alt="">
+                  <p class="s_black text-base inter">Available</p>
+                </div>
+                <div class="flex justify-center items-center gap-1">
+                  <img src="./images/seat-green-filled.png" alt="">
+                  <p class="green-primary text-bases inter">Available</p>
+                </div>
+              </div>
+            </div>
+            <!-- seat box parent  -->
+            <div class="mt-2">
+              <!-- Steering  -->
+              <div class="lg:my-6 my-4 ">
+                <div class="flex justify-end gap-1 my-1 w-full"  >
+                  <kbd class="kbd lg:px-8 px-4 border-none py-3">
+                    <img src="./images/bus steering.png" alt="">
+                  </kbd>
+                </div>
+              </div>
+              <!-- row parent  -->
+              <div class="row_parent">
+                <!-- A row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">A</h2>
+                    <div class="seat w-[60px] py-[12px]  lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">A1</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">A2</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">A3</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">A4</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- B row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">B</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">B1</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">B2</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">B3</span>
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">B4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- C row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">C</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">C1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+                      <span class="inter text-base font-[500] s_black">C2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">C3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">C4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- D row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">D</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">D1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">D2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">D3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">D4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- E row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">E</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">E1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[6px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">E2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">E3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">E4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- F row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">F</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">F1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">F2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">F3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">F4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- B row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">G</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">G1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">G2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">G3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">G4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- H row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">H</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">H1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">H2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">H3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">H4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- I row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">I</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">I1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">I2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">I3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">I4</span>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- J row -->
+                <div class=" lg:mb-[20px] mb-3 ">
+                  <div class="flex  items-center gap-2   lg:gap-12 my-1 w-full"  >
+                    <h2 class="inter w-[16px] lg:text-base font-[500] s_black">J</h2>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">J1</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">J2</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">J3</span>
+
+                    </div>
+                    <div class="seat w-[60px] py-[12px] lg:w-[100px] flex justify-center items-center cursor-pointer">
+
+                      <span class="inter text-base font-[500] s_black">J4</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- vartically line ======================  -->
+          <div class="lg:my-4 mx-4 hidden lg:block" style="border-left: 2px dashed rgba(3, 7, 18, 0.2);"></div>
+
+          <!-- =====>>>>>>>>>>>>>>select seat parent container <<<<<<<<<<<<<<<==== -->
+          <div class="w-full">
+            <div class="w-full block" style="border-bottom: 2px dashed rgba(3, 7, 18, 0.2);">
+              <h2 class="black-primary text-[20px] mb-4 font-600">Select Your Seat</h2>
+            </div>
+            <!-- information table  -->
+            <div class="info_parent lg:p-8 p-4 mt-[20px]" style="border-radius: 12px;background: rgb(247, 248, 248);">
+              <!-- Header  -->
+              <div class="flex justify-between">
+                <div class="flex justify-center gap-1 items-center">
+                  <h2 class="text-base inter font-[500] black-primary">Seat</h2>
+                  <span id="seat_count" class="bg-green-primary text-white font-semibold px-3 rounded-full">0</span>
+                </div>
+                <h2 class="text-base inter font-[500] black-primary">Class</h2>
+                <h2 class="text-base inter font-[500] black-primary">Price</h2>
+              </div>
+
+              <!-- New item gosse here append seciont <<<<<<<<<<<<<<<<<<<<<<<<  -->
+              <div id="append_box" class="border-b">
+
+              </div>
+              <!-- append section end  -->
+              <div class="my-[17px] font-medium flex justify-between text-[#030712]">
+                <h2 class="text-base inter font-[500] black-primary">Total Price</h2>
+                <h2 class="text-base inter font-[500] black-primary">BDT <span id="show_total_box">0</span></h2>
+              </div>
+              <!-- Coupon box  -->
+              <div id="coupon_box" class="relative mb-6">
+                <input id="input_coupon" class="py-5 pl-[22px] rounded-xl w-full placeholder:text-sm" type="text"
+                  placeholder="Have any coupon?">
+                <button type="submit" id="coupon_btn" disabled
+                  class="absolute right-2 top-2 btn font-semibold text-white bg-[#1DD100]">Apply</button>
+              </div>
+              <!-- New Discount price box  -->
+              <div id="append_discount" class="border-b">
+              </div>
+              <!-- New Discount price end  -->
+              <div class="font-medium flex justify-between text-[#030712]">
+                <h2 class="text-base inter font-[500] black-primary">Grand Total</h2>
+                <h2 class="text-base inter font-[500] black-primary">BDT <span id="grand_total_box">0</span></h2>
+              </div>
+            </div>
+            <!-- Form -->
+            <form action="">
+              <div class="form">
+                <div class="mt-4"><label class="font-semibold inter text-base">Passenger Name*</label><br>
+                  <input class="my-4 py-5 pl-[22px] border roboto rounded-xl w-full" type="text"
+                    placeholder="Enter your name">
+                </div>
+
+                <div class="mt-4"><label class="font-semibold inter text-base">Phone Number*</label><br>
+                  <input id="input_number" class="my-4 roboto py-5 pl-[22px] border rounded-xl w-full" type="text"
+                    placeholder="Enter your phone number" required>
+                </div>
+                <!-- validation message -->
+                <p id="error_box" class="text-red-500"></p>
+
+                <div class="mt-4"><label class="font-semibold inter text-base">Email ID</label><br>
+                  <input class="my-4 py-5 pl-[22px] roboto border rounded-xl w-full" type="email"
+                    placeholder="Enter your email id">
+                </div>
+
+                <div class="mb-6 mt-2">
+                  <button id="next_btn" disabled onclick="my_modal_1.showModal()"
+                    class="w-full font-rale btn bg-[#1DD100] hover:bg-[#64e251] font-extrabold text-xl text-white">Next</button>
+                </div>
+
+                <div class="flex justify-evenly text-[rgba(3,7,18,0.6)]">
+                  <a class="link" href="">Terms and Conditions</a>
+                  <a class="link" href="">Cancellation Policy</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--  <<<<<<<<<<<<<<<<< seat content parent end >>>>>>>>>>>>> -->
+          <!-- (((((((Toast )))))))) -->
+          <div id="success_new" class=" hidden toast toast-center toast-middle">
+            <div class="alert alert-info">
+              <span class="font-semibold roboto lg:text-[22px] text-white">You have Got 15% Discount</span>
+            </div>
+          </div>
+          <!-- toast 2  -->
+          <div id="success_cupple" class=" hidden toast toast-center toast-middle">
+            <div class="alert alert-success">
+              <span class="font-semibold roboto lg:text-[22px] text-white">You have Got 20% Discount</span>
+            </div>
+          </div>
+          <!-- toast 3 -->
+          <div id="invalid_coupon" class="hidden toast toast-center toast-middle">
+            <div class="alert bg-red-400 text-white">
+              <span class="font-semibold lg:text-[22px]">Invalid Coupon</span>
+            </div>
+          </div>
+          <!-- (((((((Modal )))))))) -->
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="my_modal_1" class="modal lg:py-8">
+            <div class="modal-box flex flex-col  justify-center items-center">
+              <div class="flex flex-col justify-center items-center">
+                <img class="lg:w-[90px] lg:h-[90px] w-[60px] h-[60px]" src="./images/success.png" alt="">
+                <h2 class="green-primary text-[22px] font-bold lg:my-6 roboto my-4">SUCCESS</h2>
+              </div>
+              <h3 class="font-bold roboto text-lg">Thank you for Booking Our Bus Seats.
+                We are working hard to find the best service and deals for you.
+              </h3>
+              <p class="py-2 roboto">Shortly you will find a confirmation in your email.</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn bg_primary roboto lg:w-[300px] font-[600] text-[18px] rounded-[30px]"> Continue
+                  </button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <!-- ===========form container=============  -->
+
+        </div>
+      </section>
+    </main>
+  </section>
+  <!-- Footer section  -->
+  <!-- footer section start -->
+  <footer
+    class=" mx-auto mt-[6.25rem] max-w-[1440px] lg:py-[120px] pb-[120px] pt-[4.375rem] bg-[#030712] text-neutral-content">
+    <div class=" main_container  mx-auto px-2">
+      <div class="flex lg:flex-row flex-col justify-between w-full pb-12 border-dashed border-b">
+        <aside>
+          <h2 class="font-rale font-extrabold lg:text-4xl text-2xl text-white mb-4">NP E-Ticket</h2>
+          <p class="max-w-[374px] font-inter text-[#FFFFFFCC] text-lg">A bus ticket website is a platform that allows
+            users to book bus
+            tickets
+            online.</p>
+        </aside>
+        <nav class="font-rale text-white">
+          <h6 class="text-xl mb-5">Download our app</h6>
+          <div class="flex gap-3 bg-black px-[13px] py-[10px] border-[1.5px] rounded-lg">
+            <div>
+              <img src="./images/playstore.png" alt="">
+            </div>
+            <div>
+              <h3>GET IT ON</h3>
+              <h3>Google Play</h3>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="flex justify-between w-full mt-8">
+        <div>
+          <p class="text-[rgba(255,255,255,0.7)]">Copyright © 2024 Nirjon Paribahan. All rights reserved. </p>
+        </div>
+        <div class="flex gap-8  font-medium">
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Script file linkup  -->
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
